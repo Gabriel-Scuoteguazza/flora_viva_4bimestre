@@ -1,0 +1,124 @@
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.coverCard {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+
+    background-size: cover;
+    background-image: url(../../imagens/FundoMutualismo.png);
+    background-position: 1%;
+
+    .coverCard__title {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        overflow: hidden;
+        font-size: 4.6875rem;
+        line-height: 1;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .coverCard__title {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(0.75rem);
+
+        .coverCard__title_transparent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: flex-start;
+            background-image: url(../../imagens/FundoMutualismo.png);
+            justify-content: center;
+            text-align: left;
+            flex-direction: column;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: -18.75rem;
+            margin-left: 10.625rem;
+            
+            strong {
+                font-size: 1.5625rem;
+                margin-bottom: -4.0625rem;
+            }
+        }
+    }
+
+    .coverCard__content {
+        position: relative;
+        z-index: 2;
+        width: 50vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: start;
+        gap: 3.125rem;
+    }
+
+    .coverCard__subTitle {
+        text-transform: uppercase;
+        margin-left: 6.25rem;
+        color: #909090;
+        line-height: 1.25rem;
+        font-weight: 800;
+    }
+}
+
+.hea {
+    position: absolute;
+    z-index: 5;
+}
+
+.textos {
+    margin-left: 64.0625rem;
+    margin-bottom: 8.125rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    opacity: 50%;
+    width: 700px;
+}
+
+.textos strong {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3.75rem;
+    align-items: center;
+    z-index: 5;
+    margin-bottom: 0.9375rem; 
+}
+
+.botoes img {
+    width: 3.75rem;
+    height: auto;
+}
+ 

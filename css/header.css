@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    height: 6rem;
+    width: 95%;
+}
+
+.flora_viva a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #909090;
+    opacity: 80%;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+
+header ul,
+header li {
+    list-style: none;
+}
+
+
+.flora_viva img {
+    height: 2.1875rem;
+}
+
+a:hover {
+    color: #FFFFFF;
+    opacity: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}

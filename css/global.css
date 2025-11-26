@@ -1,0 +1,26 @@
+body {
+	background: rgb(56, 65, 67);
+	color: white;
+	
+}
+
+
+.container {
+	padding: 2.8125rem 3.9375rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: 2.8125rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 1.875rem 1.25rem;
+  }
+
+  .header a {
+    font-size: 0.9375rem;
+  }
+}

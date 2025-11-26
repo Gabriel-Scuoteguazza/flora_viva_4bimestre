@@ -1,0 +1,133 @@
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
+
+body {
+    background-color: #000;
+    overflow: hidden;
+    background-size: cover;
+    background-image: url(../../imagens/FundoPáginaInicial.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.coverCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.75rem);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.hea  {
+    position: absolute;
+    z-index: 5;
+    top: 2px;
+    left: 0px;
+    z-index: 5;
+}
+
+.game-board {
+    width: 80%;
+    height: 43.75rem;
+    border: 2px solid #000;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(./arquivos/back2.png);
+    background-color: transparent;
+    background-size: cover;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 5rem;
+    animation: pipe-animation 2s infinite linear;
+}
+
+.mario {
+    width: 9.375rem;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.score {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #909090;
+    z-index: 10;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -5rem;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    40%, 50%, 60% { bottom: 180px; }
+    100% { bottom: 0; }
+}
+
+/* Tela de Game Over */
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(0.75rem);
+    padding: 1.875rem;
+    border-radius: 0.9375rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: none; /* escondido no início */
+    z-index: 999;
+}
+
+.game-over p {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: bold;
+    color: #000
+}
+
+.game-over button {
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0.625rem solid #495826;
+    background-color: #495826;
+    border-radius: 0.9375rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 0.3125rem; /* espaço entre os botões */
+  }
+  
+  #backBtn {
+    border-color: #902020;
+    background-color: #902020;
+  }
+  
+  #backBtn:hover {
+    background: #b03030;
+  }
+  

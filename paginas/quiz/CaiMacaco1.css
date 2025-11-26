@@ -1,0 +1,143 @@
+@import "../../css/global.css";
+@import "../../css/reset.css";
+@import url(../../css/header.css);
+
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.coverCard {
+    font-family: 'Inter', sans-serif;
+
+    background-size: cover;
+    background-image: url(../../imagens/FundoCaiMacaco1.png);
+    background-position: 1%;
+
+    .coverCard__title {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        height: 100vh;
+        overflow: hidden;
+        font-size: 7.5rem;
+        line-height: 1;
+        font-weight: bold;
+        text-transform: uppercase;   
+    }
+
+    .coverCard__title {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(0.75rem);
+
+        .coverCard__title_transparent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 75vh;
+            display: flex;
+            align-items: flex-start;
+            background-image: url(../../imagens/FundoCaiMacaco1.png);
+            justify-content: center;
+            flex-direction: column;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-left: 100px;
+        }
+    }
+
+
+    .coverCard__content {
+        position: relative;
+        z-index: 2;
+        width: 50vw;
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 3.125rem;
+    }
+
+    .coverCard__subTitle {
+        text-transform: uppercase;
+        margin-left: 6.25rem;
+        color: #909090;
+        line-height: 1.25rem;
+        font-weight: 800;
+
+    }
+}
+
+.hea {
+    position: absolute;
+    z-index: 5;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5rem;
+    width: 100%;
+}
+
+
+.botoes a {
+    border: 0.625rem solid #495826;
+    background-color: #495826;
+    border-radius: 0.9375rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.coverCard__text {
+    line-height: 150%;
+
+    strong {
+        font-weight: bold;
+        opacity: 100%;
+    }
+}
+
+li span {
+    font-weight: bold;
+}
+
+.coverCard__text li {
+    color: #fff;
+}
+
+.coverCard__text ol,
+ul {
+    list-style-type: disc;
+}
+
+.destaque a {
+    color: #FFFFFF;
+    opacity: 100%;
+}
+
+.textos {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    opacity: 50%;
+    width: 43.75rem;
+    margin-top: -28.125rem;
+    margin-left: 5rem;
+}

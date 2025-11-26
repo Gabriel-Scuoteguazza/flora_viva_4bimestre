@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="caiMacaco.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./main.js" defer></script>
+
+    <title>Flora Viva</title>
+</head>
+
+<body>
+    <header class="hea">
+        <div class="flora_viva">
+            <a href="../jogos.html">
+                <img src="../../imagens/FloraViva.png" alt="Flora Viva logo">
+            </a>
+        </div>
+
+    </header>
+
+    <article>
+        <section>
+            <div class="coverCard">
+
+                <div class="imagemCaiMacaco">
+                <img id="imagem" src="./img/Macaco0.png" alt="">
+                </div>
+
+                <h1 class="coverCard__title">Como é chamada a relação em que um organismo
+                    se beneficia e o outro é prejudicado?
+                </h1>
+
+                <div class="teste">
+                    <div id="exibicao-palavra"></div>
+                    <input type="text" id="entrada-letra" placeholder="Chute uma letra" maxlength="1">
+                    <button id="btn-chutar" onclick="chutarLetra()">Chutar</button>
+
+                    <h2>Letras chutadas</h2>
+                    <div id="letras-chutadas"></div>
+                    <div id="mensagem">Você ganhou!</div>
+                    <button id="botao-reiniciar">Recomeçar</button>
+                    <audio id="som-erro" src="./audio/SomdeMacaco.mp3"></audio>
+                </div>
+
+
+            </div>
+        </section>
+    </article>
+
+
+</body>
+
+</html>

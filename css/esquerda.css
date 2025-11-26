@@ -1,0 +1,40 @@
+body {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.hea {
+    position: absolute;
+    z-index: 5;  
+}
+
+.textos {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    opacity: 50%;
+    width: 37.5rem;
+    margin-top: -25rem;
+    margin-left: 3.75rem;
+}
+
+.textos strong {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.botoes {
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 3.75rem;
+    align-items: center;
+    z-index: 5;
+    margin-bottom: 0.9375rem; 
+}
+
+.botoes img {
+    width: 3.75rem;
+    height: auto;
+}
