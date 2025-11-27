@@ -42,6 +42,7 @@ body {
             display: flex;
             align-items: flex-start;
             background-image: url(../imagens/FundoJogos.png);
+            background-position: 0.625rem;
             justify-content: center;
             flex-direction: column;
             background-size: cover;

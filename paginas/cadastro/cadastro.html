@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="./cadastro.css">
+    <script src="./cadastro.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -41,9 +42,15 @@
             </ul>
             <ul>
                 <li>
-                    <a href="../cadastro/cadastro.html">Cadastrar-se</a>
+                    <a href="../login/login.html">Login</a>
                 </li>
             </ul>
+            <ul>
+                <li class="destaque">
+                    <a href="../cadastro/cadastro.html">Cadastro</a>
+                </li>
+            </ul>
+        
         </nav>
     </header>
 
@@ -55,35 +62,31 @@
                 <div class="coverCard__content">
                     <div class="container">
                         <div class="textos">
-                            <form action="">
+                            <form action="" id="form">
                                 <div>
                                     <label for="name">Nome:</label>
                                     <input type="text" id="name" placeholder="Digite seu nome">
                                 </div>
 
                                 <div>
-                                    <label for="email">E-mail</label>
+                                    <label for="email">E-mail:</label>
                                     <input type="email" id="email" placeholder="Digite seu E-mail">
                                 </div>
 
                                 <div>
-                                    <label for="age">Idade</label>
+                                    <label for="age">Idade:</label>
                                     <input type="number" id="age" placeholder="Digite sua idade">
                                 </div>
 
                                 <div>
-                                    <label for="nickname">Apelido</label>
-                                    <input type="text" id="nickname" placeholder="Digite seu apelido">
-                                </div>
-
-                                <div>
-                                    <label for="password">Senha</label>
+                                    <label for="password">Senha:</label>
                                     <input type="password" id="password" placeholder="Digite sua senha">
                                 </div>
 
-                                <button>Cadastrar</button>
+                                <button type="submit">Cadastrar</button>
                             </form>
                         </div>
+                        <div id="message"></div>
                     </div>
                 </div>
 
